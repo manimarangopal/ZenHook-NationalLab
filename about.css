@@ -1,0 +1,372 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+:root{
+  --primary : #01789C;
+
+}
+
+html,body{
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+/* Header Contact */
+
+.header_contact{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 0;
+  background-color: var(--primary);
+}
+.header_contact span{
+color: #D3CECE;
+}
+
+
+/* NavBar */
+
+
+.navBar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+}
+
+.nav_elements ul{
+  width: 120%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  list-style: none;
+  
+}
+
+.nav_elements ul li a{
+  text-decoration: none;
+  color: #00226C;
+}
+
+.navBar .navButton{
+  padding: 10px;
+  background-color: #00226C;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* Responsive NavBar */
+.sidebar{
+  position: fixed;
+  top: 0; 
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+.menu-button{
+  display: none;
+}
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+}
+@media(max-width: 400px){
+  .sidebar{
+    width: 100%;
+  }
+  .navBar img{
+    height: 40px;
+    width: 60px;
+  }
+  .header_contact span{
+    font-size: 8px;
+  }
+  .menu-button  a{
+    text-decoration: none;
+    color: #00226C;
+    
+  }
+  .sidebar li{
+    margin: 10px;
+    font-weight: 500;
+  }
+  .menu-button .navButton{
+    padding: 10px;
+    background-color: #00226C;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    
+  }
+  
+}
+
+/* About hero */
+
+.about_hero img{
+    width: 100%;
+    height: 600px;
+}
+.imgSec_2 img{
+    border-radius: 10px;
+    height: 80%;
+}
+.aboutSection-2{
+    margin-top: 5%;
+    margin-left: 8%;
+}
+.listCont{
+    display: flex;
+    justify-content: space-around;
+}
+.listCont li{
+    list-style: none;
+    margin-bottom: 5%;
+    color: #686670;
+}
+
+.morebtn{
+    padding: 15px 50px;
+    background-color: #00226C;
+    border-radius: 10px;
+    color: hsla(0, 0%, 100%, 0.733);
+    margin-left: 40%;
+    border: none;
+    margin-top: 4%;
+}
+
+/* Responsive */
+
+@media(max-width:400px){
+  .about_hero img{
+    width: 100%;
+    height: 250px;
+}
+    .aboutSection-2{
+        margin-left: 8px;
+    }
+
+    .imgSec_2 img{
+        width: 80%;
+        margin-right: 10px !important;
+        margin-top: 15%;
+        margin-left: 35px;
+    }
+    .morebtn{
+        padding: 15px 50px;
+        background-color: #00226C;
+        border-radius: 10px;
+        color: hsla(0, 0%, 100%, 0.733);
+        margin-left: 25%;
+        border: none;
+        margin-top: 4%;
+        margin-bottom: 20%;
+    }
+}
+
+
+/* ----------------------- */
+
+.healthCont{
+  display: grid;
+  grid-template-columns: 100px 1100px;
+  margin-left: 150px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.healthCont img, .healthCont span{
+  margin-top: 30px;
+}
+
+/* Responsive */
+
+@media(max-width:400px){
+  .healthCont{
+    display: grid;
+    grid-template-columns: 50px 300px;
+    margin-left: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .healthCont img{
+    margin-top: 70px;
+    height: 40px;
+    width: 30px;
+  }
+  .healthCont span{
+    font-size: 14px;
+  }
+}
+
+
+/* Section - 3 */
+
+.textImg{
+    margin-top: 6%;
+}
+
+.textImg img{
+    width: 70%;
+}
+.twoImg{
+    margin-left: 20%;
+    margin-top: 5%;
+    position: relative;
+}
+.img1,.img2{
+    width: 500px;
+    height: 400px;
+}
+.img2{
+    position: absolute;
+    bottom: 40%;
+    left: 30%;
+}
+
+
+/* Responsive*/
+
+@media(max-width:400px){
+    .twoImg{
+        margin-left: 10%;
+        margin-top: 18%;
+    }
+    .img1,.img2{
+        width: 200px;
+        height: 180px;
+    }
+    .textImg img{
+        width: 100%;
+    }
+}
+
+
+
+
+.card1{
+    height: 300px;
+    width: 350px;
+    background-color: #FFFDFD;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #00000048;
+    margin-top: 20px;
+}
+
+.card1 p{
+    font-size: small;
+}
+.card_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5%;
+    flex-wrap: wrap;
+}
+
+
+/* Footer */
+.footer{
+    background-color: #018594;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 350px;
+    margin-top: 5%;
+  }
+  .footer a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 10px;
+   
+  }
+  .footer li{
+    list-style: none;
+    color: #fff;
+    margin-top: 20px !important;
+  }
+  /* Responsive */
+  
+  @media(max-width:400px){
+    .footer{
+      background-color: #018594;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 1450px;
+      margin-top: 5%;
+    }
+    .footer li{
+      list-style: none;
+      color: #fff;
+      margin-top: 5px !important;
+    }
+    .footerLogo img{
+      margin-left: 30%;
+    }
+    .FooterAboutUs{
+      margin-left: 22%;
+    }
+  }
+  /* LastFooter */
+  .lastFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px !important;
+  }
+  .lastFooter ul li{
+    margin-left: 5%;
+    width: 300px;
+  }
+  
+  @media(max-width:400px){
+    .lastFooter{
+      display: block;
+      margin-left: 25px;
+      height: 70px !important;
+    }
+    .lastFooter ul li{
+      margin-left: 5%;
+      width: 300px;
+    }
+    
+  } 
+ 
